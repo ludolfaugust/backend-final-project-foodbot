@@ -1,6 +1,9 @@
 {
   "name": "final-project-foodbot-backend",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.6.2"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -26,9 +29,7 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "heroku": "^7.59.0",
-    "mongoose": "^6.0.6"
-  },
-  "devDependencies": {
+    "mongoose": "^6.0.6",
     "nodemon": "^2.0.12"
   }
 }
