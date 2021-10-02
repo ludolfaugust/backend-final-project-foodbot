@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const RecipeSchema = new Schema({
-  recipeName: {
+  name: {
     type: String,
     required: [true, "Please add a recipeName"],
     maxlength: [99, "max 50 chars are allowed for the recipeName"],
