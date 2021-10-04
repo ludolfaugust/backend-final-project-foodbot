@@ -4,13 +4,13 @@ const Recipe = require("../models/Recipe");
 const { ObjectId } = mongoose.Types;
 
 const getRecipes = async (req, res) => {
-  //const { ingredients } = req.query;
-  const ingredients = [
-    ObjectId('614aecae45d87d639b1d336b'),
-    ObjectId('614aeeb345d87d639b1d3373'),
-    ObjectId('614b12c4bfbe29d357515c64'),
-    ObjectId('614b12cfbfbe29d357515c66'),
-    ObjectId('614b13f2bfbe29d357515c6d')
+  const { ingredients } = req.query;
+  //const ingredients = [
+  //  ObjectId('614aecae45d87d639b1d336b'),
+  //  ObjectId('614aeeb345d87d639b1d3373'),
+  //  ObjectId('614b12c4bfbe29d357515c64'),
+  //  ObjectId('614b12cfbfbe29d357515c66'),
+  //  ObjectId('614b13f2bfbe29d357515c6d')
     //ObjectId("614b18cebfbe29d357515c79"),
     //ObjectId('614b132fbfbe29d357515c69'),
     //ObjectId('614b14bebfbe29d357515c76'),
