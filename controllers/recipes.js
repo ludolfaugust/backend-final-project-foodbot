@@ -55,7 +55,7 @@ const getRecipe = async (req, res) => {
     res.json({
       msg: `show Recipe with id ${id}`,
       success: true,
-      data: Recipe,
+      data: recipe,
     });
   } catch (err) {
     console.log(err);
