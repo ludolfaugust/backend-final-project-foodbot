@@ -50,7 +50,10 @@ const getRecipes = async (req, res) => {
 const getRecipe = async (req, res) => {
   try {
     const { id } = req.params;
-    const recipe = await Recipe.findById(id);
+    const recipe = await Recipe.findById(id).populate({
+      path: "ingredients",
+      populate: "ingredient",
+    });
 
     res.json({
       msg: `show Recipe with id ${id}`,
