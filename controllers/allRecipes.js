@@ -1,12 +1,12 @@
-const AllRecipe = require("../models/AllRecipe");
+const Allrecipe = require("../models/Allrecipe");
 
-const getAllRecipes = async (req, res) => {
+const getAllrecipes = async (req, res) => {
   try {
-    const allRecipes = await AllRecipe.find();
-    console.log(allRecipes);
+    const allrecipes = await Allrecipe.find();
+    console.log(allrecipes);
     res.json({
       success: true,
-      data: allRecipes,
+      data: allrecipes,
       msg: "show all allRecipes",
     });
   } catch (err) {
@@ -14,15 +14,15 @@ const getAllRecipes = async (req, res) => {
   }
 };
 
-const getAllRecipe = async (req, res) => {
+const getAllrecipe = async (req, res) => {
   try {
     const { id } = req.params;
-    const allRecipe = await AllRecipe.findById(id);
+    const allrecipe = await Allrecipe.findById(id);
 
     res.json({
       msg: `show AllRecipe with id ${id}`,
       success: true,
-      data: allRecipe,
+      data: allrecipe,
     });
   } catch (err) {
     console.log(err);
@@ -30,6 +30,6 @@ const getAllRecipe = async (req, res) => {
 };
 
 module.exports = {
-  getAllRecipes,
-  getAllRecipe,
+  getAllrecipes,
+  getAllrecipe,
 };

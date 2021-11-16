@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const { Schema } = mongoose;
 
-const AllRecipeSchema = new Schema({
+const AllrecipeSchema = new Schema({
   name: {
     type: String,
     required: [true, "Please add a recipeName"],
@@ -34,4 +34,4 @@ const AllRecipeSchema = new Schema({
   ],
 });
 
-module.exports = mongoose.model("AllRecipe", AllRecipeSchema);
+module.exports = mongoose.model("Allrecipe", AllrecipeSchema);

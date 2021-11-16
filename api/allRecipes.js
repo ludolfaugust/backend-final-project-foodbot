@@ -1,11 +1,11 @@
 const express = require("express");
 
-const { getAllRecipes, getAllRecipe } = require("../controllers/allRecipes");
+const { getAllrecipes, getAllrecipe } = require("../controllers/allrecipes");
 
 const api = express.Router();
 
-api.route("/").get(getAllRecipes);
+api.route("/").get(getAllrecipes);
 
-api.route("/:id").get(getAllRecipe);
+api.route("/:id").get(getAllrecipe);
 
 module.exports = api;
